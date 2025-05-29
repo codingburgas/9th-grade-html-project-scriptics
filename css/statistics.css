@@ -1,0 +1,13 @@
+#myChart {
+    max-width: 600px;
+    margin: 50px auto;
+    display: block;
+}
+
+#disasterFilter {
+    margin-left: 42%;
+}
+
+#chartType {
+    margin-left: 5%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/statistics.css">
+</head>
+
+<body>
+
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начална страница</a></li>
+                <li><a href="#">Служители</a></li>
+                <li><a href="#">Автомобили</a></li>
+                <li><a href="statistics.html">Статистика</a></li>
+                <li><a href="#">За нас</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <div>
+        <statisticsFilter>
+            <select id="disasterFilter">
+            <option value="all">Всички</option>
+            <option value="fire">Пожари</option>
+            <option value="flood">Наводнения</option>
+            <option value="earthquake">Земетресения</option>
+            <option value="crash">Катастрофи</option>
+            </select>
+
+            <select id="chartType">
+             <option value="bar">Bar</option>
+             <option value="pie">Pie</option>
+             <option value="line">Line</option>
+            </select>
+        </statisticsFilter>
+    </div>
+
+
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="../js/statistics.js">
+    </script>
+</body>
+
+</html>
