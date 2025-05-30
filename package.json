@@ -1,0 +1,23 @@
+{
+  "name": "9th-grade-html-project-scriptics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingburgas/9th-grade-html-project-scriptics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingburgas/9th-grade-html-project-scriptics/issues"
+  },
+  "homepage": "https://github.com/codingburgas/9th-grade-html-project-scriptics#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

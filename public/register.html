@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на произшествие</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href=" index.html ">Начална страница</a></li>
+                <li><a href="# ">Служители</a></li>
+                <li><a href="# ">Автомобили</a></li>
+                <li><a href="statistics.html ">Статистика</a></li>
+                <li><a href="# ">За нас</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Регистрация на произшествие</h1>
+    <form id="reportForm">
+        <label for="lat">Ширина:</label>
+        <input type="text" id="lat" name="lat" readonly>
+
+        <label for="lng">Дължина:</label>
+        <input type="text" id="lng" name="lng" readonly>
+
+        <label for="type">Тип на произшествието:</label>
+        <select id="type" name="type">
+        <option value="flood">Наводнение</option>
+        <option value="fire">Пожар</option>
+        <option value="earthquake">Земетресение</option>
+        <option value="storm">Буря</option>
+        </select>
+
+        <label for="description">Описание:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Въведете описание..."></textarea>
+
+        <label for="date">Дата на произшествието:</label>
+        <input type="date" id="date" name="date">
+
+        <button type="submit">Изпрати</button>
+    </form>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="js/map.js"></script>
+
+    <script src="js/register.js"></script>
+</body>
+
+</html>
