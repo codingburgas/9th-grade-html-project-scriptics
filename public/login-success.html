@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Успешен вход</title>
+    <meta http-equiv="refresh" content="3;url=index.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            background-color: #f3f3f3;
+        }
+        
+        h1 {
+            color: #4CAF50;
+        }
+        
+        .spinner {
+            margin: 30px auto;
+            width: 50px;
+            height: 50px;
+            border: 6px solid #ccc;
+            border-top: 6px solid #4CAF50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Успешен вход!</h1>
+    <div class="spinner"></div>
+    <div class="message">Пренасочване към началната страница…</div>
+
+    <script>
+        // Example: show username from localStorage
+        const username = localStorage.getItem('username');
+        if (username) {
+            const msg = document.createElement('p');
+            msg.textContent = `Добре дошъл, ${username}!`;
+            msg.style.marginTop = '15px';
+            msg.style.fontWeight = 'bold';
+            document.body.appendChild(msg);
+        }
+
+        // Optional: if you don't use <meta refresh>, redirect with JS
+        // setTimeout(() => {
+        //     window.location.href = 'index.html';
+        // }, 3000);
+    </script>
+
+</body>
+
+</html>

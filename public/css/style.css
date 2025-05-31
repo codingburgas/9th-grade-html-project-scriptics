@@ -1,57 +1,65 @@
-    nav {
-        background-color: #333;
-        padding: 10px 15px;
-        border-radius: 25px;
-        width: 80%;
-        max-width: 900px;
-        margin: 20px auto;
-    }
-    
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-    }
-    
-    nav li {
-        margin: 0 20px;
-    }
-    
-    nav li:first-child {
-        margin-right: auto;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        font-family: sans-serif;
-        transition: color 0.3s;
-    }
-    
-    nav a:hover {
-        color: #ffa500;
-    }
-    
-    #reportBtn {
-        background-color: #d90429;
-        color: white;
-        height: 150px;
-        width: 250px;
-        border-radius: 30px;
-        font-size: 24px;
-        font-weight: bold;
-        border: none;
-        cursor: pointer;
-        display: block;
-        margin: 15% auto;
-        transition: all 0.3s ease;
-    }
-    
-    #reportBtn:hover {
-        background-color: #a4031f;
-        transform: scale(1.05);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    min-height: 60px;
+}
+
+.nav-left a,
+.nav-right a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-center li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-center li a:hover,
+.nav-right a:hover {
+    color: #ffa500;
+}
+
+#reportBtn {
+    background-color: #d90429;
+    color: white;
+    height: 150px;
+    width: 250px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 15% auto;
+    transition: all 0.3s ease;
+}
+
+#reportBtn:hover {
+    background-color: #a4031f;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

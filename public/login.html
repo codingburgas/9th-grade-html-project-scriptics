@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Начална Страница</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Вход</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
@@ -25,10 +24,15 @@
             <a href="login.html">Вход</a>
         </div>
     </nav>
-
-    <a href="register.html">
-        <button id="reportBtn">Сигнализирай за произшествие</button>
-    </a>
+    <div class="main-content">
+        <h2>Вход за служители</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Потребителско име" required><br>
+            <input type="password" id="password" placeholder="Парола" required><br>
+            <button type="submit">Вход</button>
+        </form>
+    </div>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

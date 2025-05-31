@@ -1,0 +1,115 @@
+body {
+    background-color: #e7f3ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+    /* center horizontally */
+    font-family: sans-serif;
+    min-height: 60px;
+}
+
+.nav-left a,
+.nav-right a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-center li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-center li a:hover,
+.nav-right a:hover {
+    color: #ffa500;
+}
+
+
+/* CENTERED CONTENT */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    /* Adjust based on nav height */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #0077b6;
+    font-size: 28px;
+}
+
+form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #cce5ff;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0077b6;
+}
+
+button {
+    background-color: #00b4d8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0096c7;
+}

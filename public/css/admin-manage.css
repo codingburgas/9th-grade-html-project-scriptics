@@ -1,0 +1,118 @@
+body {
+    background-color: #1c1c3c;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222860;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-left a,
+.nav-right a,
+.nav-center li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-left a:hover,
+.nav-right a:hover,
+.nav-center li a:hover {
+    color: #ff5050;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+form {
+    margin-top: 20px;
+    background-color: #2a2a60;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff5050;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+#employeesList {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.employee-card {
+    background-color: #2a2a60;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee-card span {
+    font-size: 18px;
+}
+
+.employee-card button {
+    background-color: #ff5050;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.employee-card button:hover {
+    background-color: #cc0000;
+}
