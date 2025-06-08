@@ -12,7 +12,10 @@ const dataPath = path.join(__dirname, 'data', 'disasters.json');
 const usersPath = path.join(__dirname, 'data', 'users.json');
 
 app.post('/report', (req, res) => {
-    const newReport = req.body;
+    const newReport = {
+        ...req.body,
+        status: "pending"
+    };
     fs.readFile(dataPath, 'utf8', (err, data) => {
         if (err) {
             console.error('Read error:', err);
@@ -56,6 +59,50 @@ app.post('/api/login', (req, res) => {
             res.json({ success: true, role: user.role });
         } else {
             res.json({ success: false });
+        }
+    });
+});
+
+app.get('/api/disasters', (req, res) => {
+    fs.readFile(dataPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading disaster file:', err);
+            return res.status(500).json({ message: 'Error reading data file.' });
+        }
+
+        try {
+            const disasters = JSON.parse(data);
+            res.json(disasters);
+        } catch (e) {
+            console.error('Error parsing JSON:', e);
+            res.status(500).json({ message: 'Error parsing data file.' });
+        }
+    });
+});
+
+app.post('/api/accept', (req, res) => {
+    const { index } = req.body;
+
+    fs.readFile(dataPath, 'utf8', (err, data) => {
+        if (err) return res.status(500).json({ success: false });
+
+        let reports = [];
+        try {
+            reports = JSON.parse(data);
+        } catch (e) {
+            return res.status(500).json({ success: false });
+        }
+
+        if (index >= 0 && index < reports.length) {
+            reports[index].status = "accepted";
+
+            fs.writeFile(dataPath, JSON.stringify(reports, null, 2), err => {
+                if (err) return res.status(500).json({ success: false });
+
+                res.json({ success: true });
+            });
+        } else {
+            res.status(400).json({ success: false });
         }
     });
 });
