@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Служител Начална страница</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/employee.css">
 </head>
 
@@ -17,15 +16,17 @@
             <li><a href="../login.html" id="logoutBtn">Изход</a></li>
         </ul>
     </nav>
-    <h1>Добре дошъл, Служител!</h1>
-    <p>Прегледайте последните сигнали:</p>
-    <button onclick="window.location.href='view-reports.html'">Виж сигнали</button>
+    <h2>Нашите превозни средства</h2>
+    <div id="vehiclesContainer"></div>
+
     <script>
+        localStorage.setItem("userRole", "employee");
         document.getElementById("logoutBtn").addEventListener("click", function() {
             localStorage.removeItem("userRole");
             localStorage.removeItem("username");
         });
     </script>
+    <script src="../js/vehicles.js"></script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
             if (data.success) {
                 // Store user info in localStorage
                 localStorage.setItem('username', data.username);
-                localStorage.setItem('role', data.role);
+                localStorage.setItem('userRole', data.role);
 
                 // Redirect based on role
                 if (data.role === 'admin') {
