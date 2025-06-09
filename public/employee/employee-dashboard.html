@@ -3,20 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Вход на служител</title>
-    <meta http-equiv="refresh" content="3;url=employee-index.html">
-    <link rel="stylesheet" href="../css/employee-dashboards-animation.css">
+    <title>Зареждане...</title>
+    <link rel="stylesheet" href="../css/employee-panel.css">
 </head>
 
 <body>
+    <div class="loading-screen">
+        <h1>Успешен вход!</h1>
+        <div class="spinner"></div>
+        <p class="message">Пренасочване към панела на служителя…</p>
+        <div id="welcomeMessage" class="message" style="font-weight: bold;"></div>
+    </div>
 
-    <h1>Успешен вход като служител!</h1>
-    <div class="spinner"></div>
-    <div class="message">Пренасочване към панела на служителя…</div>
+    <script>
+        // Display the username immediately
+        const username = localStorage.getItem('username');
+        if (username) {
+            document.getElementById('welcomeMessage').textContent = `Потребител: ${username}`;
+        }
 
-    <script src="js/loading.js">
+        // Wait for 3 seconds (3000 milliseconds), then redirect.
+        // This guarantees the user sees the animation.
+        setTimeout(function() {
+            window.location.href = 'employee-index.html';
+        }, 3000);
     </script>
-
 </body>
 
 </html>

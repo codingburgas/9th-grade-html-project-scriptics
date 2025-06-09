@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пожар в жилище</title>
+    <link rel="stylesheet" href="css/house-fire.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Начална страница</a>
+        </div>
+
+        <ul class="nav-center">
+            <li><a href="#">Служители</a></li>
+            <li><a href="vehicles.html">Автомобили</a></li>
+            <li><a href="statistics.html">Статистика</a></li>
+            <li><a href="#">За нас</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="login.html">Вход</a>
+        </div>
+    </nav>
+    <main>
+        <section class="house-background">
+            <h1>Какво да правим при пожар в жилище</h1>
+            <ul>
+                <li><b>Запазете спокойствие</b> и действайте бързо. Паниката може да доведе до лоши решения.</li>
+                <li><b>Излезте незабавно</b> — не събирайте вещи. Времето е решаващо.</li>
+                <li>Ако има дим, <b>придвижвайте се ниско до пода</b>, където въздухът е по-чист.</li>
+                <li>Проверете вратите за топлина с опакото на ръката. Ако са горещи, <b>не ги отваряйте</b>.</li>
+                <li>След като излезете, не се връщайте обратно. <b>Обадете се незабавно на 112</b>.</li>
+                <li>Ако не можете да излезете, останете в стая с прозорец, сигнализирайте и блокирайте дима.</li>
+            </ul>
+        </section>
+
+        <section class="quiz-container">
+            <h2>Кратък тест</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <label for="q1">1. Какво трябва да направите, ако видите дим в коридора пред вас?</label>
+                    <select id="q1" name="q1">
+                        <option value="">--Изберете--</option>
+                        <option value="a">Да го игнорирате и да продължите</option>
+                        <option value="b">Да се наведете ниско и да излезете веднага, ако е безопасно</option>
+                        <option value="c">Да отворите всички врати и прозорци</option>
+                    </select>
+                    <span class="feedback"></span>
+                </div>
+
+                <div class="question">
+                    <label for="q2">2. Какво е първото нещо, което трябва да направите при пожар в дома ви?</label>
+                    <select id="q2" name="q2">
+                        <option value="">--Изберете--</option>
+                        <option value="a">Да се опитате да го изгасите сами</option>
+                        <option value="b">Да вземете ценни вещи</option>
+                        <option value="c">Да евакуирате незабавно и да предупредите другите</option>
+                    </select>
+                    <span class="feedback"></span>
+                </div>
+
+                <div class="question">
+                    <label for="q3">3. Какво трябва да направите, ако сте блокирани в стая от огъня?</label>
+                    <select id="q3" name="q3">
+                        <option value="">--Изберете--</option>
+                        <option value="a">Да счупите прозореца и да скочите</option>
+                        <option value="b">Да останете в стаята, да запечатате вратата и да сигнализирате през прозореца</option>
+                        <option value="c">Да запалите нещо, за да привлечете внимание</option>
+                    </select>
+                    <span class="feedback"></span>
+                </div>
+
+                <button type="submit">Изпрати отговорите</button>
+                <p id="final-result"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/house-fire.js"></script>
+</body>
+
+</html>

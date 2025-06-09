@@ -4,24 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Преглед на сигнали</title>
-    <link rel="stylesheet" href="../css/view-reports.css">
+    <link rel="stylesheet" href="../css/employee-panel.css">
+    <link rel="stylesheet" href="../css/view-reports-specific.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="employee-index.html">Начало</a></li>
-            <li><a href="employee-vehicle.html">Автомобили</a></li>
-            <li><a href="../login.html" id="logoutBtn">Изход</a></li>
-        </ul>
-    </nav>
+    <header class="panel-header">
+        <div class="logo"><a href="employee-index.html">Служителски панел</a></div>
+        <nav class="panel-nav">
+            <ul>
+                <li><a href="employee-index.html">Начало</a></li>
+                <li><a href="view-reports.html" class="active">Сигнали</a></li>
+                <li><a href="employee-vehicle.html">Автомобили</a></li>
+            </ul>
+        </nav>
+        <button id="logoutBtn">Изход</button>
+    </header>
 
-    <h2>Подадени сигнали</h2>
-    <div id="reportsContainer"></div>
+    <main class="panel-main">
+        <div class="page-header">
+            <h1>Подадени сигнали</h1>
+            <p>Прегледайте и управлявайте сигналите.</p>
+        </div>
+        <div id="reportsContainer"></div>
+    </main>
 
     <script>
         document.getElementById("logoutBtn").addEventListener("click", function() {
             localStorage.removeItem("userRole");
+            localStorage.removeItem("username");
+            window.location.href = '../login.html';
         });
     </script>
     <script src="../js/view-reports.js"></script>

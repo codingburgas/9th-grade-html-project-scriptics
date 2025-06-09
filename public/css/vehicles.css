@@ -1,157 +1,173 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f8ff;
-    color: #222;
+/* --- Inherit the main theme --- */
+
+
+/* Note: The HTML file must link to style.css *before* this file. */
+
+
+/* --- Page Header --- */
+
+.page-header {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 40px 0;
     text-align: center;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px 20px;
-    border-radius: 25px;
-    width: 85%;
-    max-width: 1000px;
-    margin: 20px auto;
-    font-family: sans-serif;
-    min-height: 60px;
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
 }
 
-.nav-left a,
-.nav-right a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+.page-header p {
+    font-size: 1.1rem;
+    color: #ccc;
 }
 
-.nav-center {
-    list-style: none;
-    display: flex;
-    gap: 35px;
-    padding: 0;
-    margin: 0;
-}
 
-.nav-center li a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
+/* --- Vehicles Section --- */
 
-.nav-left a:hover,
-.nav-center li a:hover,
-.nav-right a:hover {
-    color: #ffa500;
-}
-
-h2 {
-    margin: 30px 0 20px;
-    font-size: 28px;
-    color: #0077b6;
+.vehicles-section {
+    padding: 60px 0;
 }
 
 #vehiclesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .vehicle-card {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 240px;
-    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
     position: relative;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .vehicle-card img {
     width: 100%;
-    height: 140px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
-.vehicle-card h3 {
-    margin: 10px 0 5px;
-    font-size: 18px;
-    color: #0077b6;
+.card-content {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Allows the button to be pushed to the bottom */
 }
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: var(--text-dark);
+}
+
+.card-content p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+
+/* --- Status Button Styling --- */
+
+.status-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 15px;
+    margin-top: auto;
+    /* Pushes button to the bottom of the card */
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.status-btn:hover {
+    background-color: #555;
+}
+
+
+/* --- Status Indicators --- */
 
 .status-dot {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 14px;
-    height: 14px;
+    top: 15px;
+    right: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.status-available {
-    background-color: green;
-}
 
-.status-in_work {
-    background-color: orange;
-}
-
-.status-off {
-    background-color: red;
-}
+/* --- Status Legend (Fixed at bottom-right) --- */
 
 .status-legend {
     position: fixed;
     bottom: 20px;
-    left: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 14px 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    z-index: 100;
-    width: max-content;
+    right: 20px;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* INCREASED Z-INDEX TO FIX OVERLAP */
+    z-index: 999;
+    text-align: left;
+    border-top: 4px solid var(--primary-color);
 }
 
 .status-legend h4 {
-    margin-top: 0;
-    font-size: 15px;
-    margin-bottom: 8px;
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
 }
 
 .legend-item {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 4px 0;
+    margin-top: 8px;
+    font-size: 0.9rem;
 }
 
 .legend-dot {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     display: inline-block;
 }
 
+
+/* Shared Status Colors for both dots and legend */
+
 .status-available {
-    background-color: green;
+    background-color: #28a745;
+    /* Green */
 }
 
 .status-in_work {
-    background-color: orange;
+    background-color: #ffc107;
+    /* Yellow/Orange */
 }
 
 .status-off {
-    background-color: red;
+    background-color: #dc3545;
+    /* Red */
 }

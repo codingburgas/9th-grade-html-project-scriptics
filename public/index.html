@@ -1,34 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Начална Страница</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Начална Страница - Пожарна Безопасност</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <nav>
-        <div class="nav-left">
-            <a href="index.html">Начална страница</a>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Пожарна Безопасност</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#">Служители</a></li>
+                    <li><a href="vehicles.html">Автомобили</a></li>
+                    <li><a href="statistics.html">Статистика</a></li>
+                    <li><a href="#">За нас</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="login.html" class="login-btn">Вход</a>
+            </div>
         </div>
+    </header>
 
-        <ul class="nav-center">
-            <li><a href="#">Служители</a></li>
-            <li><a href="vehicles.html">Автомобили</a></li>
-            <li><a href="statistics.html">Статистика</a></li>
-            <li><a href="#">За нас</a></li>
-        </ul>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Вашата безопасност е наш приоритет</h1>
+                <p class="hero-subtitle">Сигнализирайте за произшествие бързо и лесно. Бъдете информирани, бъдете подготвени.</p>
+                <a href="register.html" class="btn btn-primary">Сигнализирай сега</a>
+            </div>
+        </section>
 
-        <div class="nav-right">
-            <a href="login.html">Вход</a>
+        <section class="preparedness-section">
+            <div class="container">
+                <h2>Бъди подготвен!</h2>
+                <p class="section-intro">Знанието е първата стъпка към безопасността. Научете какво да правите в случай на пожар.</p>
+                <div class="card-container">
+                    <a href="house-fire.html" class="card">
+                        <img src="images/house-fire-icon.png" alt="Икона на къща в пламъци" class="card-icon">
+                        <h3>Пожар в жилище</h3>
+                        <p>Стъпки за действие и превенция при пожар у дома.</p>
+                        <span class="card-link">Научи повече &rarr;</span>
+                    </a>
+                    <a href="forest-fire.html" class="card">
+                        <img src="images/forest-fire-icon.png" alt="Икона на горящо дърво" class="card-icon">
+                        <h3>Горски пожар</h3>
+                        <p>Как да се предпазим и реагираме при пожар сред природата.</p>
+                        <span class="card-link">Научи повече &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container">
+                <h2>Защо е важна подготовката?</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Времето е решаващо</h3>
+                        <p>Всяка секунда е от значение. Планът за евакуация може да спаси животи.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-house-damage"></i>
+                        <h3>Намалете щетите</h3>
+                        <p>Правилната реакция може значително да намали материалните щети по вашето имущество.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-heart-pulse"></i>
+                        <h3>Запазете спокойствие</h3>
+                        <p>Когато знаете какво да правите, е по-лесно да останете спокойни и да вземете правилни решения.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency-contacts">
+            <div class="container">
+                <h2>Спешни Контакти</h2>
+                <p>Запазете тези номера на достъпно място. При спешен случай, обадете се незабавно.</p>
+                <div class="contact-number">
+                    <i class="fas fa-phone-alt"></i>
+                    <strong>Единен европейски номер за спешни повиквания:</strong>
+                    <span>112</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer-bottom">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Пожарна Безопасност. Всички права запазени.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-    </nav>
+    </footer>
 
-    <a href="register.html">
-        <button id="reportBtn">Сигнализирай за произшествие</button>
-    </a>
 </body>
 
 </html>

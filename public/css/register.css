@@ -1,41 +1,128 @@
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    max-width: 500px;
-                    margin: 30px auto;
-                    padding: 20px;
-                    background-color: #f2f2f2;
-                    border-radius: 15px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                }
-                
-                form label {
-                    margin-top: 10px;
-                    font-weight: bold;
-                }
-                
-                form input,
-                form textarea,
-                form button {
-                    margin-top: 5px;
-                    padding: 10px;
-                    font-size: 1rem;
-                    border-radius: 10px;
-                    border: 1px solid #ccc;
-                }
-                
-                form button {
-                    background-color: #d60000;
-                    color: white;
-                    cursor: pointer;
-                    margin-top: 20px;
-                    transition: background-color 0.3s;
-                }
-                
-                form button:hover {
-                    background-color: #a30000;
-                }
-                
-                h1 {
-                    text-align: center;
-                }
+/* --- Page Header (uses the same style as other pages) --- */
+
+.page-header {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+
+/* --- Register Section Layout --- */
+
+.register-section {
+    padding: 60px 0;
+    background-color: #f4f7f6;
+}
+
+.register-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 40px;
+    align-items: start;
+}
+
+
+/* --- Form Column Styling --- */
+
+.form-column {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.report-form .input-group {
+    margin-bottom: 20px;
+}
+
+.report-form .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.report-form .input-group input,
+.report-form .input-group select,
+.report-form .input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-form .input-group input:focus,
+.report-form .input-group select:focus,
+.report-form .input-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(200, 29, 37, 0.2);
+}
+
+.report-form .input-group input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+
+/* Group for side-by-side coordinates */
+
+.coordinates-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.report-form .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+
+/* --- Map Column Styling --- */
+
+.map-column {
+    height: 600px;
+    /* Define a fixed height for the map container */
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    z-index: 1;
+    /* Ensures map is clickable */
+}
+
+
+/* --- Responsive adjustments for smaller screens (optional but good) --- */
+
+@media (max-width: 992px) {
+    .register-container {
+        grid-template-columns: 1fr;
+        /* Stack columns on top of each other */
+    }
+    .map-column {
+        /* Make map shorter on smaller screens */
+        height: 400px;
+    }
+}

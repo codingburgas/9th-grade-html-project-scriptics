@@ -107,6 +107,34 @@ app.post('/api/accept', (req, res) => {
     });
 });
 
+app.post('/api/reject', (req, res) => {
+    const { index } = req.body; // Get the index of the report to reject
+
+    fs.readFile(dataPath, 'utf8', (err, data) => {
+        if (err) return res.status(500).json({ success: false, message: "Could not read data file." });
+
+        let reports = [];
+        try {
+            reports = JSON.parse(data);
+        } catch (e) {
+            return res.status(500).json({ success: false, message: "Could not parse data file." });
+        }
+
+        if (index >= 0 && index < reports.length) {
+            // Set the status of the report to "rejected"
+            reports[index].status = "rejected";
+
+            fs.writeFile(dataPath, JSON.stringify(reports, null, 2), err => {
+                if (err) return res.status(500).json({ success: false, message: "Could not save data file." });
+
+                res.json({ success: true }); // Send success response
+            });
+        } else {
+            res.status(400).json({ success: false, message: "Invalid report index." });
+        }
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });

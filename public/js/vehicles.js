@@ -1,64 +1,75 @@
+// This is the final script for the PUBLIC vehicles page.
+
 const userRole = localStorage.getItem("userRole");
 
+// The default data is now simple, with NO type or capacity.
 let vehicles = JSON.parse(localStorage.getItem("vehicles")) || [{
         name: "Пожарна 01",
-        image: "images/firetruck1.jpg",
+        image: "/images/firetruck1.jpg",
         status: "available"
     },
     {
         name: "Пожарна 02",
-        image: "images/firetruck1.jpg",
+        image: "/images/firetruck1.jpg",
         status: "in_work"
     },
     {
         name: "Пожарна 03",
-        image: "images/firetruck1.jpg",
+        image: "/images/firetruck1.jpg",
         status: "off"
     }
 ];
 
-let container = document.getElementById('vehiclesContainer');
+const container = document.getElementById('vehiclesContainer');
 
-vehicles.forEach((vehicle, index) => {
-    let card = document.createElement('div');
-    card.className = 'vehicle-card';
+if (container) {
+    container.innerHTML = "";
 
-    let statusDot = document.createElement('div');
-    statusDot.className = 'status-dot status-' + vehicle.status;
+    vehicles.forEach((vehicle, index) => {
+        const card = document.createElement('div');
+        card.className = 'vehicle-card';
 
-    let img = document.createElement('img');
-    img.src = vehicle.image;
-    img.alt = vehicle.name;
+        const statusDot = document.createElement('div');
+        statusDot.className = 'status-dot status-' + vehicle.status;
 
-    let title = document.createElement('h3');
-    title.textContent = vehicle.name;
+        const img = document.createElement('img');
+        img.src = vehicle.image;
+        img.alt = vehicle.name;
 
-    card.appendChild(statusDot);
-    card.appendChild(img);
-    card.appendChild(title);
+        const content = document.createElement('div');
+        content.className = 'card-content';
 
-    // ✅ Only show button if employee or admin
-    if (userRole === "employee" || userRole === "admin") {
-        let button = document.createElement('button');
-        button.className = 'status-btn';
-        button.textContent = "Смени статус";
+        const title = document.createElement('h3');
+        title.textContent = vehicle.name;
 
-        button.addEventListener("click", () => {
-            let nextStatus = getNextStatus(vehicle.status);
-            vehicle.status = nextStatus;
-            statusDot.className = 'status-dot status-' + nextStatus;
-            localStorage.setItem("vehicles", JSON.stringify(vehicles));
-        });
+        // The lines for "Тип" and "Капацитет" have been completely removed.
+        content.appendChild(title);
 
-        card.appendChild(button);
-    }
+        card.appendChild(statusDot);
+        card.appendChild(img);
+        card.appendChild(content);
 
-    container.appendChild(card);
-});
+        // The logic for the "Смени статус" button remains the same.
+        if (userRole === "employee" || userRole === "admin") {
+            const button = document.createElement('button');
+            button.className = 'status-btn';
+            button.textContent = "Смени статус";
+
+            button.addEventListener("click", () => {
+                const nextStatus = getNextStatus(vehicle.status);
+                vehicles[index].status = nextStatus;
+                localStorage.setItem("vehicles", JSON.stringify(vehicles));
+                location.reload();
+            });
+            content.appendChild(button);
+        }
+
+        container.appendChild(card);
+    });
+}
 
 function getNextStatus(current) {
     if (current === "available") return "in_work";
     if (current === "in_work") return "off";
     return "available";
 }
-s

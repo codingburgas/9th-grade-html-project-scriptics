@@ -1,0 +1,193 @@
+/* --- Google Fonts (Recommended) --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+/* --- Employee Panel Theme Variables --- */
+
+:root {
+    --panel-primary: #0077b6;
+    --panel-primary-hover: #00b4d8;
+    --panel-secondary: #03045e;
+    --panel-background: #edf6f9;
+    --panel-card-bg: #ffffff;
+    --panel-text-dark: #333;
+    --panel-text-light: #ffffff;
+    --status-accepted: #28a745;
+    --status-pending: #ffc107;
+}
+
+
+/* --- General Body & Layout --- */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--panel-background);
+    color: var(--panel-text-dark);
+    margin: 0;
+}
+
+.panel-main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* --- Panel Header --- */
+
+.panel-header {
+    background-color: var(--panel-primary);
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.panel-header .logo a {
+    color: var(--panel-text-light);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.panel-header .panel-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.panel-header .panel-nav a {
+    color: var(--panel-text-light);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.panel-header .panel-nav a:hover,
+.panel-header .panel-nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#logoutBtn {
+    background-color: var(--panel-primary-hover);
+    color: var(--panel-text-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#logoutBtn:hover {
+    background-color: #02a6c8;
+}
+
+
+/* --- Page Header within Main Content --- */
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--panel-secondary);
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+/* --- Shared Card Styles (for reports and vehicles) --- */
+
+.panel-card {
+    background: var(--panel-card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.panel-card h3 {
+    margin-top: 0;
+    color: var(--panel-secondary);
+}
+
+
+/* --- Button Styles --- */
+
+.btn {
+    background-color: var(--panel-primary-hover);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0096c7;
+    transform: scale(1.05);
+}
+
+
+/* --- Loading Spinner Screen --- */
+
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-screen h1 {
+    color: var(--panel-primary);
+}
+
+.loading-screen .spinner {
+    margin: 30px auto;
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-top: 6px solid var(--panel-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    /* A standard red color */
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    /* A darker red for hover */
+}

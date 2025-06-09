@@ -4,6 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const username = document.getElementById('username').value.trim();
     const password = document.getElementById('password').value.trim();
 
+    // Fetch from your REAL API endpoint
     fetch('/api/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -12,24 +13,19 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         .then(res => res.json())
         .then(data => {
             if (data.success) {
-                // Store user info in localStorage
-                localStorage.setItem('username', data.username);
+                console.log('Login successful for role:', data.role);
+                localStorage.setItem('username', username); // We can still store the username
                 localStorage.setItem('userRole', data.role);
 
-                // Redirect based on role
-                if (data.role === 'admin') {
-                    window.location.href = 'admin/admin-dashboard.html';
-                } else if (data.role === 'employee') {
-                    window.location.href = 'employee/employee-dashboard.html';
-                } else {
-                    window.location.href = 'login-success.html';
+                if (data.role === 'employee') {
+                    window.location.href = '/employee/employee-dashboard.html';
                 }
             } else {
                 alert('Грешно потребителско име или парола!');
             }
         })
         .catch(err => {
-            console.error('Грешка при вход:', err);
-            alert('Възникна грешка при опит за вход.');
+            console.error('Login fetch error:', err);
+            alert('Възникна грешка при вход.');
         });
 });

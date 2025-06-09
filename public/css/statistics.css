@@ -1,13 +1,38 @@
-#myChart {
-    max-width: 600px;
-    margin: 50px auto;
-    display: block;
+/* --- Page Header --- */
+
+.page-header {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 40px 0;
+    text-align: center;
 }
 
-#disasterFilter {
-    margin-left: 42%;
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
 }
 
-#chartType {
-    margin-left: 5%;
+.page-header p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+
+/* --- Statistics Section --- */
+
+.statistics-section {
+    padding: 60px 0;
+    background-color: #f4f7f6;
+}
+
+.chart-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 30px;
+}
+
+.chart-container {
+    position: relative;
+    height: 450px;
 }

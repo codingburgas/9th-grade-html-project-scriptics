@@ -1,0 +1,195 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 60px;
+}
+
+.nav-left a,
+.nav-right a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-center li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-center li a:hover,
+.nav-right a:hover {
+    color: #ffa500;
+}
+
+
+/* --- Custom Properties (Theme) --- */
+
+:root {
+    --primary-color: #d90429;
+    --primary-hover-color: #a4031f;
+    --text-dark: #222;
+    --text-light: #f5f5f5;
+    --background-light: #f5f5f5;
+    --background-card: #ffffff;
+    --correct-answer: #28a745;
+    --incorrect-answer: #dc3545;
+    --neutral-answer: #ffc107;
+}
+
+
+/* --- General Styles --- */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+
+/* --- Hero Section --- */
+
+.house-background {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(80, 0, 0, 0.6)), url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/vision_camera_1.width-1000.format-webp.webp") center/cover no-repeat;
+    padding: 50px 30px;
+    color: var(--text-light);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.house-background h1 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #ffdddd;
+}
+
+.house-background ul {
+    list-style: disc inside;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    padding: 0 15px;
+}
+
+
+/* --- Quiz Section --- */
+
+.quiz-container {
+    padding: 20px;
+}
+
+.quiz-container h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    color: var(--primary-color);
+}
+
+.question {
+    background: var(--background-card);
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/* --- Feedback & Result --- */
+
+.feedback {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    min-height: 1.2em;
+}
+
+.feedback.correct {
+    color: var(--correct-answer);
+}
+
+.feedback.incorrect {
+    color: var(--incorrect-answer);
+}
+
+#final-result {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+/* --- Button --- */
+
+button {
+    display: block;
+    margin: 40px auto 0;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

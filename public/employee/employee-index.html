@@ -3,26 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Служител Начална страница</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/employee.css">
+    <title>Служителски панел</title>
+    <link rel="stylesheet" href="../css/employee-panel.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="employee-index.html">Начало</a></li>
-            <li><a href="employee-vehicle.html">Автомобили</a></li>
-            <li><a href="../login.html" id="logoutBtn">Изход</a></li>
-        </ul>
-    </nav>
-    <h1>Добре дошъл, Служител!</h1>
-    <p>Прегледайте последните сигнали:</p>
-    <button onclick="window.location.href='view-reports.html'">Виж сигнали</button>
+    <header class="panel-header">
+        <div class="logo"><a href="employee-index.html">Служителски панел</a></div>
+        <nav class="panel-nav">
+            <ul>
+                <li><a href="employee-index.html" class="active">Начало</a></li>
+                <li><a href="view-reports.html">Сигнали</a></li>
+                <li><a href="employee-vehicle.html">Автомобили</a></li>
+            </ul>
+        </nav>
+        <button id="logoutBtn">Изход</button>
+    </header>
+
+    <main class="panel-main">
+        <div class="page-header">
+            <h1 id="welcome-heading">Добре дошли!</h1>
+            <p>Изберете опция от менюто, за да продължите.</p>
+        </div>
+
+        <div style="display: flex; gap: 30px;">
+            <a href="view-reports.html" class="panel-card" style="text-decoration: none; color: inherit; flex: 1;">
+                <h3>Преглед на сигнали</h3>
+                <p>Прегледайте и одобрете последните подадени сигнали от граждани.</p>
+            </a>
+            <a href="employee-vehicle.html" class="panel-card" style="text-decoration: none; color: inherit; flex: 1;">
+                <h3>Управление на автомобили</h3>
+                <p>Променете статуса на превозните средства от автопарка.</p>
+            </a>
+        </div>
+    </main>
+
     <script>
+        // --- THIS IS THE UPDATED SCRIPT ---
+
+        // 1. Get the user's role from localStorage.
+        const userRole = localStorage.getItem('userRole');
+        const welcomeHeading = document.getElementById('welcome-heading');
+
+        // 2. Check if the role is 'employee'.
+        if (userRole === 'employee') {
+            // If it is, set a generic welcome message. This avoids the 'undefined' problem.
+            welcomeHeading.textContent = `Добре дошъл, Служител!`;
+        } else {
+            // If for some reason the role is not found, show a default message.
+            welcomeHeading.textContent = 'Добре дошли в служителския панел!';
+        }
+
+        // 3. The logout button logic remains the same.
         document.getElementById("logoutBtn").addEventListener("click", function() {
             localStorage.removeItem("userRole");
             localStorage.removeItem("username");
+            window.location.href = '../login.html';
         });
     </script>
 </body>

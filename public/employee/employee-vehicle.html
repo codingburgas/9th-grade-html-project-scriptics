@@ -3,29 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Служител Начална страница</title>
-    <link rel="stylesheet" href="../css/employee.css">
-</head>
+    <title>Управление на автомобили</title>
+    <link rel="stylesheet" href="../css/employee-panel.css">
+    <link rel="stylesheet" href="../css/vehicles-specific.css"> </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="employee-index.html">Начало</a></li>
-            <li><a href="employee-vehicle.html">Автомобили</a></li>
-            <li><a href="../login.html" id="logoutBtn">Изход</a></li>
-        </ul>
-    </nav>
-    <h2>Нашите превозни средства</h2>
-    <div id="vehiclesContainer"></div>
+    <header class="panel-header">
+        <div class="logo"><a href="employee-index.html">Служителски панел</a></div>
+        <nav class="panel-nav">
+            <ul>
+                <li><a href="employee-index.html">Начало</a></li>
+                <li><a href="view-reports.html">Сигнали</a></li>
+                <li><a href="employee-vehicle.html" class="active">Автомобили</a></li>
+            </ul>
+        </nav>
+        <button id="logoutBtn">Изход</button>
+    </header>
+
+    <main class="panel-main">
+        <div class="page-header">
+            <h1>Автомобили</h1>
+            <p>Променете статуса на превозните средства.</p>
+        </div>
+        <div id="vehiclesContainer"></div>
+    </main>
 
     <script>
-        localStorage.setItem("userRole", "employee");
+        // The problematic line that set the userRole has been REMOVED from here.
         document.getElementById("logoutBtn").addEventListener("click", function() {
             localStorage.removeItem("userRole");
             localStorage.removeItem("username");
+            window.location.href = '../login.html';
         });
     </script>
-    <script src="../js/vehicles.js"></script>
+    <script src="../js/employee-vehicles.js"></script>
 </body>
 
 </html>

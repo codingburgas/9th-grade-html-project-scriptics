@@ -1,0 +1,32 @@
+#reportsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.report-card {
+    /* Inherits from .panel-card */
+    border-left: 5px solid var(--status-pending);
+}
+
+.report-card.accepted {
+    border-left-color: var(--status-accepted);
+}
+
+.report-card p {
+    margin: 8px 0;
+}
+
+.report-card strong {
+    color: #555;
+}
+
+.report-card button {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.report-card button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}

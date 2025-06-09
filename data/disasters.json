@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "type": "crash",
+    "location": {
+      "lat": 42.502098,
+      "lng": 27.447968
+    },
+    "date": "2099-12-31",
+    "description": "asdasdasdasdada",
+    "status": "accepted"
+  },
+  {
+    "type": "crash",
+    "location": {
+      "lat": 42.679407,
+      "lng": 27.630615
+    },
+    "date": "222222-02-22",
+    "description": "safafsasdaf",
+    "status": "accepted"
+  },
+  {
+    "type": "crash",
+    "location": {
+      "lat": 41.636999,
+      "lng": 26.751709
+    },
+    "date": "0131-03-13",
+    "description": "adsasdad",
+    "status": "rejected"
+  }
+]
