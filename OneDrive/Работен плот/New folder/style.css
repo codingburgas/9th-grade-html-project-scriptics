@@ -1,0 +1,98 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    min-height: 60px;
+}
+
+.nav-left a,
+.nav-right a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-center li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-center li a:hover,
+.nav-right a:hover {
+    color: #ffa500;
+}
+
+.button-wrapper {
+    width: 100%;
+    background-color: red;
+    padding: 30px 0; 
+    display: flex;
+    justify-content: center; 
+}
+
+#reportBtn {
+    background-image: url('fire.png');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    height: 250px;
+    width: 250px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    margin: 0;
+   
+  }
+
+#reportBtn:hover {
+    background-color: transparent;
+background-repeat: no-repeat;
+border: none;
+outline: none;
+    background-image: url('truck.png'); 
+    color: rgb(255, 0, 0);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.between-image {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+    .button-container {
+        width: 100%;
+        background-image: url('button\ back\ ground.png');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px; 
+      }  
