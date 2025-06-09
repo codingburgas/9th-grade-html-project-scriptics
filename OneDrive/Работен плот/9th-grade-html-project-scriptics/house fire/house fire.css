@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+h1 {
+  color: darkred;
+}
+
+.question {
+  margin-top: 20px;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.house-background {
+   background-image: url("house fire.jpeg"); 
+  background-size: cover;
+  background-position: center;
+  padding: 100px 30px;
+  color: white;
+  border-radius: 10px;
+  width: 100vw;        
+  margin-left: calc(-50vw + 50%); 
+  box-sizing: border-box;
+}
