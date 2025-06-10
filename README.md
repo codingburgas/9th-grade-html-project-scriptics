@@ -1,72 +1,81 @@
-<img src="./public/images/logo.png" alt="Project Icon" width="300">
+
+<h1 align="center"><em>Scriptics</em> 🔥🧯</h1>
+<p align="center"><img width="350" src="public/images/logo.png" alt="Project Logo"></p>
 
 ---
 
-## Съдържание
-- [За проекта](#за-проекта)
-- [Основни функционалности](#основни-функционалности)
-- [Как да го стартираме?](#как-да-го-стартираме)
-- [Използвани технологии](#използвани-технологии)
-- [Екип](#екип)
+## 📋 Project Overview
+
+### <em>Our team, Scriptics presents a web-based platform designed to inform, protect, and engage communities in the face of natural disasters, with a focus on home and forest fires.</em>
+
+The site allows users to:
+- 📝 Submit reports of fire incidents using a simple, intuitive form.
+- 📈 View real-time statistics and fire data visualizations.
+- 📚 Learn more about the equipment and staff of our organisation.
+- 🧑‍ Inform themselves about current natural disasters.
 
 ---
 
-## За проекта 👋
+## 🖥️ Languages & Frameworks
 
-"Пожарна Безопасност" е уеб приложение, което служи като информационен портал за действия при бедствия. То включва интерактивни тестове, система за докладване на инциденти в реално време, както и панел за служители, които да управляват сигналите, превозните средства и персонала.
-
----
-
-## Основни функционалности
-
-* **Информационни страници** за действия при пожар в къща и горски пожар.
-* **Интерактивни тестове** с точкуване и обратна връзка.
-* **Система за докладване на инциденти** с интерактивна карта (Leaflet.js).
-* **Страница със статистика**, която показва данните визуално с диаграми (Chart.js).
-* **Система за вход** на служители.
-* **Служебен панел** за управление на сигнали (Приемане/Отхвърляне), статуси на превозни средства и на служители.
+<div align="left">
+  <img height="100" src="Technologies/HTML5.png" alt="HTML" />    HTML5<br>
+  <img height="100" src="Technologies/CSS3.png" alt="CSS" />    CSS3<br>
+  <img height="100" src="Technologies/JS.png" alt="JavaScript" />    JavaScript<br>
+  <img height="100" src="Technologies/Technologies/Node.png" alt="Node.js" />    Node.js<br>
+  <img height="100" src="Technologies/Technologies/Charts.png" alt="Chart.js" />    Chart.js<br>
+</div>
 
 ---
 
-## Как да го стартираме?
+## 🎨 Design Tools
 
-За да стартирате проекта локално, следвайте тези стъпки:
-
-1.  **Клонирайте репозиторито:**
-    ```bash
-    git clone [https://github.com/codingburgas/9th-grade-html-project-scriptics.git](https://github.com/codingburgas/9th-grade-html-project-scriptics.git)
-    ```
-2.  **Отворете папката на проекта:**
-    ```bash
-    cd 9th-grade-html-project-scriptics
-    ```
-3.  **Инсталирайте нужните пакети:**
-    ```bash
-    npm install express
-    ```
-4.  **Стартирайте сървъра:**
-    ```bash
-    node server.js
-    ```
-5.  **Отворете сайта в браузъра си:**
-    `http://localhost:8080`
+<div align="left">
+  <img height="100" src="Technologies/Technologies/Mspaint.png" alt="MS Paint" />    MS Paint<br>
+</div>
 
 ---
 
-## Използвани технологии
+## 🤝 Collaboration Tools
 
-* HTML5
-* CSS3 (Flexbox & Grid)
-* Vanilla JavaScript
-* Node.js & Express.js
-* Chart.js & Leaflet.js
-* Git & GitHub
+<div align="left">
+  <img height="100" src="Technologies/Technologies/Teams.png" alt="Microsoft Teams" />    Microsoft Teams<br>
+  <img height="100" src="Technologies/Technologies/Github (1).png" alt="GitHub" />    GitHub<br>
+<img height="100" src="Technologies/Technologies/Git.png" alt="Git" />    Git<br>
+</div>
 
 ---
 
-## Екип
+## 📁 Documents
 
--   **[@VATenev23 - Back-end developer](https://github.com/VATenev23)**
--   **[@APPetrovv - Scrum Trainer](https://github.com/APPetrovv)**
--   **[@V5kov8 - Designer](https://github.com/V5kov8)**
--   **[@HNStanchev - Back-end developer](https://github.com/HNStanchev)**
+### 📄 Documentation  
+- Project documentation
+
+### 🎤 Presentation  
+- Presentation
+  
+---
+
+## 🔧 Features
+
+- 🔥 Fire incident reporting with live map integration (Leaflet.js)
+- 📊 Real-time visualizations (Chart.js)
+- 🧑‍🚒 Admin dashboard for managing personnel, vehicles & alerts
+- 📱 Mobile-responsive design
+
+---
+
+## 👥 Team – Scriptics
+
+| 👤 **Name**          | 🛠️ **Role**            | 🏫 **Class**|
+|----------------------|------------------------|-------------|
+| Vladimir Petkov      | Designer               | 🟨 9A       |
+| Valeri Tenev         | Front-End Developer    | 🟥 9B       |
+| Hristqn Stanchev     | Back-End Developer     | 🟩 9V        |
+| Aleksandar Petrov    | Scrum Trainer          | 🟦 9G       |
+
+
+
+
+
+---
