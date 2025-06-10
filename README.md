@@ -1,48 +1,72 @@
-# 9-grade-html-css-js-project
-# Scriptics
-![LOGO](https://1drv.ms/i/c/a58f7435fcf5bc70/EcVOAFYueW9AqJ5CtuW0eLsBbpigCIO6IM1xJbJhqvxVQw?e=53F3AF)
+<img src="./public/images/logo.png" alt="Project Icon" width="300">
 
+---
 
-## Table of Contents
-- [About us](#about-us)
-- [Our Coders](#our-coders)
-- [Instalation](#instalation)
-- [Usage](#usage)
-- [Used technologies](#used-technologies)
+## Съдържание
+- [За проекта](#за-проекта)
+- [Основни функционалности](#основни-функционалности)
+- [Как да го стартираме?](#как-да-го-стартираме)
+- [Използвани технологии](#използвани-технологии)
+- [Екип](#екип)
 
+---
 
-## About us 👋
-...
+## За проекта 👋
 
+"Пожарна Безопасност" е уеб приложение, което служи като информационен портал за действия при бедствия. То включва интерактивни тестове, система за докладване на инциденти в реално време, както и панел за служители, които да управляват сигналите, превозните средства и персонала.
 
+---
 
-## Our Coders
-- [@VNPetkov - Designer](https://www.github.com/V5kov8):
-- [@APPetrov - Scrum Trainer](https://www.github.com/APPetrovv): 
-- [@HNStanchev - Front-end Developer](https://www.github.com/HNStanchev):
-- [@VATenev - Back-end Developer](https://www.github.com/VATenev23): 
+## Основни функционалности
 
+* **Информационни страници** за действия при пожар в къща и горски пожар.
+* **Интерактивни тестове** с точкуване и обратна връзка.
+* **Система за докладване на инциденти** с интерактивна карта (Leaflet.js).
+* **Страница със статистика**, която показва данните визуално с диаграми (Chart.js).
+* **Система за вход** на служители.
+* **Служебен панел** за управление на сигнали (Приемане/Отхвърляне), статуси на превозни средства и на служители.
 
-## Instalation
+---
 
+## Как да го стартираме?
 
-Download out project from here:
+За да стартирате проекта локално, следвайте тези стъпки:
 
-```bash
-https://github.com/codingburgas/9th-grade-html-project-scriptics.git
-```
+1.  **Клонирайте репозиторито:**
+    ```bash
+    git clone [https://github.com/codingburgas/9th-grade-html-project-scriptics.git](https://github.com/codingburgas/9th-grade-html-project-scriptics.git)
+    ```
+2.  **Отворете папката на проекта:**
+    ```bash
+    cd 9th-grade-html-project-scriptics
+    ```
+3.  **Инсталирайте нужните пакети:**
+    ```bash
+    npm install express
+    ```
+4.  **Стартирайте сървъра:**
+    ```bash
+    node server.js
+    ```
+5.  **Отворете сайта в браузъра си:**
+    `http://localhost:8080`
 
-## Usage
-...
+---
 
-## Used technologies
+## Използвани технологии
 
--Visual Studio
+* HTML5
+* CSS3 (Flexbox & Grid)
+* Vanilla JavaScript
+* Node.js & Express.js
+* Chart.js & Leaflet.js
+* Git & GitHub
 
--Word
+---
 
--Power point
+## Екип
 
--Teams
-
--Git hub
+-   **[@VATenev23 - Back-end developer](https://github.com/VATenev23)**
+-   **[@APPetrovv - Scrum Trainer](https://github.com/APPetrovv)**
+-   **[@V5kov8 - Designer](https://github.com/V5kov8)**
+-   **[@HNStanchev - Back-end developer](https://github.com/HNStanchev)**
