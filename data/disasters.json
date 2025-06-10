@@ -1,41 +1,52 @@
-[{
-        "type": "fire",
-        "location": {
-            "lat": 42.510262,
-            "lng": 27.463086
-        },
-        "date": "2025-06-15",
-        "description": "Сигнал за гъст дим от апартамент в ж.к. Славейков, бл. 45.",
-        "status": "accepted"
+[
+  {
+    "type": "fire",
+    "location": {
+      "lat": 42.510262,
+      "lng": 27.463086
     },
-    {
-        "type": "crash",
-        "location": {
-            "lat": 42.528,
-            "lng": 27.456
-        },
-        "date": "2025-06-20",
-        "description": "Верижна катастрофа на бул. 'Транспортна' до мол Плаза, има разлив на гориво.",
-        "status": "accepted"
+    "date": "2025-06-15",
+    "description": "Сигнал за гъст дим от апартамент в ж.к. Славейков, бл. 45.",
+    "status": "accepted"
+  },
+  {
+    "type": "crash",
+    "location": {
+      "lat": 42.528,
+      "lng": 27.456
     },
-    {
-        "type": "flood",
-        "location": {
-            "lat": 42.4973,
-            "lng": 27.4837
-        },
-        "date": "2025-07-01",
-        "description": "Наводнена алея в Морската градина след проливен дъжд.",
-        "status": "pending"
+    "date": "2025-06-20",
+    "description": "Верижна катастрофа на бул. 'Транспортна' до мол Плаза, има разлив на гориво.",
+    "status": "accepted"
+  },
+  {
+    "type": "flood",
+    "location": {
+      "lat": 42.4973,
+      "lng": 27.4837
     },
-    {
-        "type": "fire",
-        "location": {
-            "lat": 42.454736,
-            "lng": 27.418377
-        },
-        "date": "2025-07-05",
-        "description": "Пожар на сухи треви и храсти в близост до жилищни сгради в Меден Рудник.",
-        "status": "rejected"
-    }
+    "date": "2025-07-01",
+    "description": "Наводнена алея в Морската градина след проливен дъжд.",
+    "status": "pending"
+  },
+  {
+    "type": "fire",
+    "location": {
+      "lat": 42.454736,
+      "lng": 27.418377
+    },
+    "date": "2025-07-05",
+    "description": "Пожар на сухи треви и храсти в близост до жилищни сгради в Меден Рудник.",
+    "status": "rejected"
+  },
+  {
+    "type": "crash",
+    "location": {
+      "lat": 42.27426,
+      "lng": 27.279053
+    },
+    "date": "2222-02-22",
+    "description": "hrhthrfthtjrftyrftjrftjrf",
+    "status": "rejected"
+  }
 ]
