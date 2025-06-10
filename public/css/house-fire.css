@@ -1,49 +1,3 @@
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px 20px;
-    border-radius: 25px;
-    width: 85%;
-    max-width: 1000px;
-    margin: 20px auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 60px;
-}
-
-.nav-left a,
-.nav-right a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.nav-center {
-    list-style: none;
-    display: flex;
-    gap: 35px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-center li a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.nav-left a:hover,
-.nav-center li a:hover,
-.nav-right a:hover {
-    color: #ffa500;
-}
-
-
 /* --- Custom Properties (Theme) --- */
 
 :root {
@@ -59,15 +13,10 @@ nav {
 }
 
 
-/* --- General Styles --- */
+/* --- Page-Specific Styles --- */
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-light);
-    color: var(--text-dark);
-}
+
+/* Note: The main body, header, and footer styles are in style.css */
 
 main {
     max-width: 900px;
@@ -76,7 +25,7 @@ main {
 }
 
 
-/* --- Hero Section --- */
+/* --- Main Info Section --- */
 
 .house-background {
     background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(80, 0, 0, 0.6)), url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/vision_camera_1.width-1000.format-webp.webp") center/cover no-repeat;
@@ -84,6 +33,8 @@ main {
     color: var(--text-light);
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    /* Added margin for spacing from the header */
 }
 
 .house-background h1 {
@@ -173,7 +124,7 @@ select:focus {
 
 /* --- Button --- */
 
-button {
+#quiz-form button {
     display: block;
     margin: 40px auto 0;
     padding: 14px 30px;
@@ -187,9 +138,13 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover,
-button:focus {
+#quiz-form button:hover,
+#quiz-form button:focus {
     background-color: var(--primary-hover-color);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.house-background.forest-theme {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(60, 40, 0, 0.6)), url('https://images.unsplash.com/photo-1563379927-442894a41304?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
 }

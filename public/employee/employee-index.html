@@ -12,9 +12,10 @@
         <div class="logo"><a href="employee-index.html">Служителски панел</a></div>
         <nav class="panel-nav">
             <ul>
-                <li><a href="employee-index.html" class="active">Начало</a></li>
+                <li><a href="employee-index.html">Начало</a></li>
                 <li><a href="view-reports.html">Сигнали</a></li>
                 <li><a href="employee-vehicle.html">Автомобили</a></li>
+                <li><a href="employee-firefighters.html">Служители</a></li>
             </ul>
         </nav>
         <button id="logoutBtn">Изход</button>
@@ -26,21 +27,23 @@
             <p>Изберете опция от менюто, за да продължите.</p>
         </div>
 
-        <div style="display: flex; gap: 30px;">
-            <a href="view-reports.html" class="panel-card" style="text-decoration: none; color: inherit; flex: 1;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+            <a href="view-reports.html" class="panel-card" style="text-decoration: none; color: inherit;">
                 <h3>Преглед на сигнали</h3>
                 <p>Прегледайте и одобрете последните подадени сигнали от граждани.</p>
             </a>
-            <a href="employee-vehicle.html" class="panel-card" style="text-decoration: none; color: inherit; flex: 1;">
+            <a href="employee-vehicle.html" class="panel-card" style="text-decoration: none; color: inherit;">
                 <h3>Управление на автомобили</h3>
                 <p>Променете статуса на превозните средства от автопарка.</p>
+            </a>
+            <a href="employee-firefighters.html" class="panel-card" style="text-decoration: none; color: inherit;">
+                <h3>Управление на служители</h3>
+                <p>Променете статуса на служителите, които са на смяна или в почивка.</p>
             </a>
         </div>
     </main>
 
     <script>
-        // --- THIS IS THE UPDATED SCRIPT ---
-
         // 1. Get the user's role from localStorage.
         const userRole = localStorage.getItem('userRole');
         const welcomeHeading = document.getElementById('welcome-heading');

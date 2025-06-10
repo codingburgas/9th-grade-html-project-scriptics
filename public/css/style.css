@@ -28,6 +28,15 @@ body {
     background-color: var(--background-light);
     color: var(--text-dark);
     line-height: 1.6;
+    /* --- The Sticky Footer Fix --- */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    padding-top: var(--header-height);
 }
 
 .container {
@@ -334,16 +343,4 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.social-links a {
-    color: #aaa;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--text-light);
 }

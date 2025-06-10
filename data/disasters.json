@@ -1,32 +1,41 @@
-[
-  {
-    "type": "crash",
-    "location": {
-      "lat": 42.502098,
-      "lng": 27.447968
+[{
+        "type": "fire",
+        "location": {
+            "lat": 42.510262,
+            "lng": 27.463086
+        },
+        "date": "2025-06-15",
+        "description": "Сигнал за гъст дим от апартамент в ж.к. Славейков, бл. 45.",
+        "status": "accepted"
     },
-    "date": "2099-12-31",
-    "description": "asdasdasdasdada",
-    "status": "accepted"
-  },
-  {
-    "type": "crash",
-    "location": {
-      "lat": 42.679407,
-      "lng": 27.630615
+    {
+        "type": "crash",
+        "location": {
+            "lat": 42.528,
+            "lng": 27.456
+        },
+        "date": "2025-06-20",
+        "description": "Верижна катастрофа на бул. 'Транспортна' до мол Плаза, има разлив на гориво.",
+        "status": "accepted"
     },
-    "date": "222222-02-22",
-    "description": "safafsasdaf",
-    "status": "accepted"
-  },
-  {
-    "type": "crash",
-    "location": {
-      "lat": 41.636999,
-      "lng": 26.751709
+    {
+        "type": "flood",
+        "location": {
+            "lat": 42.4973,
+            "lng": 27.4837
+        },
+        "date": "2025-07-01",
+        "description": "Наводнена алея в Морската градина след проливен дъжд.",
+        "status": "pending"
     },
-    "date": "0131-03-13",
-    "description": "adsasdad",
-    "status": "rejected"
-  }
+    {
+        "type": "fire",
+        "location": {
+            "lat": 42.454736,
+            "lng": 27.418377
+        },
+        "date": "2025-07-05",
+        "description": "Пожар на сухи треви и храсти в близост до жилищни сгради в Меден Рудник.",
+        "status": "rejected"
+    }
 ]

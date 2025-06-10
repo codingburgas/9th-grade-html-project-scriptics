@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горски пожар</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/house-fire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Пожарна Безопасност</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="firefighters.html">Служители</a></li>
+                    <li><a href="vehicles.html">Автомобили</a></li>
+                    <li><a href="statistics.html">Статистика</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="login.html" class="login-btn">Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="house-background forest-theme">
+            <h1>Какво да правим при горски пожар</h1>
+            <ul>
+                <li>Останете спокойни и се информирайте за ситуацията. Слушайте указанията на властите.</li>
+                <li>Напуснете района веднага, ако се намирате в близост до огнището.</li>
+                <li>Използвайте основни пътища и се придвижвайте по посока, обратна на вятъра.</li>
+                <li>Покрийте носа и устата си с мокра кърпа, за да избегнете вдишване на дим.</li>
+                <li>Не се опитвайте да се криете в сгради или автомобили, близо до горяща растителност.</li>
+                <li>След като се евакуирате, уведомете властите за местоположението си.</li>
+            </ul>
+        </section>
+
+        <section class="quiz-container">
+            <h2>Кратък тест</h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <label for="q1">1. Какво трябва да направите, ако видите огън в гората близо до вас?</label>
+                    <select id="q1" name="q1">
+                        <option value="">--Изберете--</option>
+                        <option value="a">Да снимате за социалните мрежи</option>
+                        <option value="b">Да се отдалечите по най-бързия и безопасен начин</option>
+                        <option value="c">Да останете и наблюдавате</option>
+                    </select>
+                    <span class="feedback"></span>
+                </div>
+                <div class="question">
+                    <label for="q2">2. Какво е правилното поведение при евакуация по време на горски пожар?</label>
+                    <select id="q2" name="q2">
+                        <option value="">--Изберете--</option>
+                        <option value="a">Да изчакате одобрение от съседите</option>
+                        <option value="b">Да се придвижите по основни пътища и срещу вятъра</option>
+                        <option value="c">Да се върнете за лични вещи</option>
+                    </select>
+                    <span class="feedback"></span>
+                </div>
+                <div class="question">
+                    <label for="q3">3. Какво не трябва да правите при горски пожар?</label>
+                    <select id="q3" name="q3">
+                        <option value="">--Изберете--</option>
+                        <option value="a">Да се криете в колата близо до дървета</option>
+                        <option value="b">Да следвате инструкциите на властите</option>
+                        <option value="c">Да покриете лицето си с мокра кърпа</option>
+                    </select>
+                    <span class="feedback"></span>
+                </div>
+                <button type="submit">Изпрати отговорите</button>
+                <p id="final-result"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer-bottom">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Пожарна Безопасност. Всички права запазени.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/forest-fire.js"></script>
+</body>
+
+</html>

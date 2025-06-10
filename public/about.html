@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>За нас - Пожарна Безопасност</title>
+    <!-- Main shared stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Page-specific stylesheet -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">Пожарна Безопасност</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="firefighters.html">Служители</a></li>
+                    <li><a href="vehicles.html">Автомобили</a></li>
+                    <li><a href="statistics.html">Статистика</a></li>
+                    <!-- Make this the active link -->
+                    <li><a href="about.html" class="active">За нас</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="login.html" class="login-btn">Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- This is a new hero section specifically for this page -->
+        <section class="about-hero">
+            <div class="container">
+                <h1>За нас</h1>
+                <p>Отдадени на защитата на нашата общност с професионализъм и смелост.</p>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="content-section">
+            <div class="container text-center">
+                <h2>Нашата мисия</h2>
+                <p class="mission-text">Нашата мисия е да осигурим най-високо ниво на безопасност за гражданите и тяхното имущество чрез превенция, обучение и бърза реакция при пожари и други извънредни ситуации. Ние се стремим да бъдем стълб на доверие и сигурност в обществото.</p>
+            </div>
+        </section>
+
+        <!-- The Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="text-center">Запознайте се с екипа</h2>
+                <!-- This container will be populated by about.js -->
+                <div id="teamContainer"></div>
+                <div class="text-center" style="margin-top: 30px;">
+                    <a href="firefighters.html" class="btn btn-secondary">Виж всички служители</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer-bottom">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Пожарна Безопасност. Всички права запазени.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/about.js"></script>
+</body>
+
+</html>

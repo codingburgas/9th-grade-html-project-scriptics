@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Управление на служители</title>
+    <link rel="stylesheet" href="../css/employee-panel.css">
+    <link rel="stylesheet" href="../css/firefighters-specific.css">
+</head>
+
+<body>
+    <header class="panel-header">
+        <div class="logo"><a href="employee-index.html">Служителски панел</a></div>
+        <nav class="panel-nav">
+            <ul>
+                <li><a href="employee-index.html">Начало</a></li>
+                <li><a href="view-reports.html">Сигнали</a></li>
+                <li><a href="employee-vehicle.html">Автомобили</a></li>
+                <li><a href="employee-firefighters.html">Служители</a></li>
+            </ul>
+        </nav>
+        <button id="logoutBtn">Изход</button>
+    </header>
+
+    <main class="panel-main">
+        <div class="page-header">
+            <h1>Управление на служители</h1>
+            <p>Променете статуса на служителите.</p>
+        </div>
+        <div id="firefightersContainer"></div>
+    </main>
+
+    <script>
+        document.getElementById("logoutBtn").addEventListener("click", function() {
+            localStorage.removeItem("userRole");
+            localStorage.removeItem("username");
+            window.location.href = '../login.html';
+        });
+    </script>
+    <script src="../js/employee-firefighters.js"></script>
+</body>
+
+</html>

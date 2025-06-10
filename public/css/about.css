@@ -1,0 +1,99 @@
+/* --- Styles specific to the About Us page --- */
+
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1574717195415-9c5c5c02a706?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+    color: var(--text-light);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content-section {
+    padding: 60px 20px;
+}
+
+.content-section h2,
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.mission-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.team-section {
+    padding: 60px 20px;
+    background-color: #f4f7f6;
+}
+
+#teamContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-member-card .profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+}
+
+.team-member-card .rank {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* Secondary button style */
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
