@@ -50,10 +50,10 @@ The site allows users to:
 
 ### 📄 Documentation  
 - Project documentation
-
+![Documentation](https://1drv.ms/w/c/a58f7435fcf5bc70/EZVxDDZ13rVHksZk2HHAN_QBRc-ABDozBcn3zcXwweOEPQ?e=EmZUN9)
 ### 🎤 Presentation  
 - Presentation
-  
+  ![Presentation](https://1drv.ms/p/c/a58f7435fcf5bc70/EVP1sqLWHzpFi7RKTWGNETEBhP_V-W4FCySs9p8KbFmUgA?e=NFiUcq)
 ---
 
 ## 🔧 Features
@@ -73,6 +73,7 @@ The site allows users to:
 | Valeri Tenev         | Front-End Developer    | 🟥 9B       |
 | Hristqn Stanchev     | Back-End Developer     | 🟩 9V        |
 | Aleksandar Petrov    | Scrum Trainer          | 🟦 9G       |
+
 
 
 
