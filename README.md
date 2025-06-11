@@ -50,10 +50,10 @@ The site allows users to:
 
 ### 📄 Documentation  
 - Project documentation
-![Documentation](https://1drv.ms/w/c/a58f7435fcf5bc70/EZVxDDZ13rVHksZk2HHAN_QBRc-ABDozBcn3zcXwweOEPQ?e=EmZUN9)
+![Documentation]([https://1drv.ms/w/c/a58f7435fcf5bc70/EZVxDDZ13rVHksZk2HHAN_QBRc-ABDozBcn3zcXwweOEPQ?e=EmZUN9](https://codingburgas-my.sharepoint.com/:w:/g/personal/vnpetkov23_codingburgas_bg/EVyKjOEruRNFiVWG8psW56ABn01vYseQH5D3i3ym8jDwyg?e=7XkI3b))
 ### 🎤 Presentation  
 - Presentation
-  ![Presentation](https://1drv.ms/p/c/a58f7435fcf5bc70/EVP1sqLWHzpFi7RKTWGNETEBhP_V-W4FCySs9p8KbFmUgA?e=NFiUcq)
+  ![Presentation]([https://1drv.ms/p/c/a58f7435fcf5bc70/EVP1sqLWHzpFi7RKTWGNETEBhP_V-W4FCySs9p8KbFmUgA?e=NFiUcq](https://1drv.ms/w/c/a58f7435fcf5bc70/EZVxDDZ13rVHksZk2HHAN_QBRc-ABDozBcn3zcXwweOEPQ?e=EmZUN9](https://codingburgas-my.sharepoint.com/:p:/g/personal/vnpetkov23_codingburgas_bg/ETPeP0Wj-bRFrtsySdALJ7IB-wCBbVWrGvFUdzIxvtg4tw?e=3bYsoX)))
 ---
 
 ## 🔧 Features
