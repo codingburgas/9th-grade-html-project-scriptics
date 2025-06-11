@@ -50,10 +50,10 @@ The site allows users to:
 
 ### 📄 Documentation  
 - Project documentation
-![Documentation]([https://1drv.ms/w/c/a58f7435fcf5bc70/EZVxDDZ13rVHksZk2HHAN_QBRc-ABDozBcn3zcXwweOEPQ?e=EmZUN9](https://codingburgas-my.sharepoint.com/:w:/g/personal/vnpetkov23_codingburgas_bg/EVyKjOEruRNFiVWG8psW56ABn01vYseQH5D3i3ym8jDwyg?e=7XkI3b))
+https://codingburgas-my.sharepoint.com/:w:/r/personal/vnpetkov23_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7BE18C8A5C-B92B-4513-8955-86F29B16E7A0%7D&file=%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BD%D0%B0%20Scriptics2_4d76972f-c577-48c8-aeb4-747f264eb64e%201.docx&action=default&mobileredirect=true&DefaultItemOpen=1
 ### 🎤 Presentation  
 - Presentation
-  ![Presentation]([https://1drv.ms/p/c/a58f7435fcf5bc70/EVP1sqLWHzpFi7RKTWGNETEBhP_V-W4FCySs9p8KbFmUgA?e=NFiUcq](https://1drv.ms/w/c/a58f7435fcf5bc70/EZVxDDZ13rVHksZk2HHAN_QBRc-ABDozBcn3zcXwweOEPQ?e=EmZUN9](https://codingburgas-my.sharepoint.com/:p:/g/personal/vnpetkov23_codingburgas_bg/ETPeP0Wj-bRFrtsySdALJ7IB-wCBbVWrGvFUdzIxvtg4tw?e=3bYsoX)))
+  https://codingburgas-my.sharepoint.com/:p:/r/personal/vnpetkov23_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7B453FDE33-F9A3-45B4-AEDB-3249D00B27B2%7D&file=Scriptics_2d2027bd-952b-4668-a9ec-394f22aa2013%201.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1
 ---
 
 ## 🔧 Features
